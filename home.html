@@ -1,0 +1,73 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title> Mirna's Market</title>
+</head>
+<body>
+<center><img src="logo.png" width="400px" height="250px"></center><br>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'food')">Food</button>
+  <button class="tablinks" onclick="openCity(event, 'choc')">Choclates</button>
+  <button class="tablinks" onclick="openCity(event, 'des')">Desserts</button>
+</div>
+
+<div id="food" class="tabcontent">
+  <img src="1.jfif" width="200px" height="150px">
+  <h4> Name: Domti </h4>
+  <h4> Price: 7 L.E </h4>
+  <hr>
+  <img src="2.jfif" width="200px" height="150px">
+  <h4> Name: Pringles </h4>
+  <h4> Price: 23 L.E </h4>
+  <hr>
+  <img src="3.jfif" width="200px" height="150px">
+  <h4> Name: Domti Cheese </h4>
+  <h4> Price: 7 L.E </h4>
+</div>
+
+<div id="choc" class="tabcontent">
+  <img src="4.jfif" width="200px" height="150px">
+  <h4> Name: Snickers </h4>
+  <h4> Price: 10 L.E </h4>
+  <hr>
+  <img src="5.jfif" width="200px" height="150px">
+  <h4> Name: Milka </h4>
+  <h4> Price: 18 L.E </h4>
+  <hr>
+  <img src="6.jfif" width="200px" height="150px">
+  <h4> Name: Nuss- Spiltter </h4>
+  <h4> Price: 30 L.E </h4>
+</div>
+
+<div id="des" class="tabcontent">
+  <img src="7.jfif" width="200px" height="150px">
+  <h4> Name: Ferrero Rocher </h4>
+  <h4> Price: 100 L.E </h4>
+  <hr>
+  <img src="8.jfif" width="200px" height="150px">
+  <h4> Name: Quality Street </h4>
+  <h4> Price: 120 L.E </h4>
+  <hr>
+  <img src="9.jfif" width="200px" height="150px">
+  <h4> Name: Nutella </h4>
+  <h4> Price: 30 L.E </h4>
+</div>
+ <script>
+  function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>
+ 
+
